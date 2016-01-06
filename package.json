@@ -1,0 +1,35 @@
+{
+  "name": "bookmarkify",
+  "version": "0.0.1",
+  "description": "Create js bookmarks easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ajuste/bookmarkify.git"
+  },
+  "keywords": [
+    "bookmarrk",
+    "script",
+    "js",
+    "javascript",
+    "web",
+    "node"
+  ],
+  "author": "Alvaro Juste",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/ajuste/bookmarkify/issues"
+  },
+  "homepage": "https://github.com/ajuste/bookmarkify#readme",
+  "engines" : { "node" : "=5.1.0" },
+  "dependencies": {
+    "jaune-env": "=0.0.x",
+    "jaune-web": "=0.0.x",
+    "koa-jade": "^2.0.2",
+    "lodash": "^3.10.1",
+    "uglify-js": "^2.6.1"
+  }
+}

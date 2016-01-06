@@ -1,0 +1,16 @@
+{
+  "app" : {
+    "name" : "Bookmarkify"
+  },
+  "pages" : {
+    "index" : {
+      "title" : "Bookmarkify",
+      "h2": "Create .js bookmarks by submitting your script below.",
+      "submit": "Create bookmark!",
+      "success": "Your bookmark its ready",
+      "another": "Why not creating another?",
+      "failed": "Seems the script you provided is not valid. Give it another shot.",
+      "github": "See it on github"
+    }
+  }
+}

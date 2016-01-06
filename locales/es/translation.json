@@ -1,0 +1,11 @@
+{
+  "app" : {
+    "name" : "Bookmarkify"
+  },
+  "pages" : {
+    "index" : {
+      "title" : "Bookmarkify",
+      "h2": "Crea marcadores .js introduciendo tu script debajo."
+    }
+  }
+}
