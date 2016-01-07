@@ -5,6 +5,7 @@
   "pages" : {
     "index" : {
       "title" : "Bookmarkify.js: Ejecuta tu .js con un click",
+      "description":  "Crea marcadores que ejecutan código JavaScript con un simple click.",
       "h2": "Crea marcadores que ejecutan código JavaScript con un simple click. Empieza por envíar tu código debajo.",
       "submit": "Crear marcador!",
       "success": "Tu marcador está listo",

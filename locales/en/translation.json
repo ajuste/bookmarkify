@@ -5,6 +5,7 @@
   "pages" : {
     "index" : {
       "title" : "Bookmarkify.js: Launch your code with a single click",
+      "description": "Create .js a bookmark that will execute any javascript you want by just clicking it.",
       "h2": "Create .js a bookmark that will execute any javascript you want by just clicking it. Start by submitting your script below.",
       "submit": "Create bookmark!",
       "success": "Your bookmark its ready",
