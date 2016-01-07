@@ -67,7 +67,7 @@ _defaultsDeep(_config, {
     http : {
       web : {
         port: process.env.PORT || 3000,
-        favicon : _join(__dirname, "./root/public-resources/favicon.ico")
+        favicon : _join(__dirname, "/favicon.ico")
       }
     }
   }

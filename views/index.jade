@@ -1,10 +1,11 @@
 doctype html
-html
+html(itemscope, itemtype="http://schema.org/Product")
   head
       meta(charset="utf-8")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       meta(name="Description", content=t('pages.index.description'))
-
+      meta(itemprop="name", content=t('app.name'))
+      meta(itemprop="description", content=t('pages.index.description'))
 
       title=t('pages.index.title')
 
