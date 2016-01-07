@@ -1,16 +1,16 @@
 {
   "app" : {
-    "name" : "Bookmarkify"
+    "name" : "Bookmarkify.js"
   },
   "pages" : {
     "index" : {
-      "title" : "Bookmarkify",
-      "h2": "Create .js a bookmark that will execute any javascript you want by just clicking it. Submit your script below.",
+      "title" : "Bookmarkify.js: Launch your code with a single click",
+      "h2": "Create .js a bookmark that will execute any javascript you want by just clicking it. Start by submitting your script below.",
       "submit": "Create bookmark!",
       "success": "Your bookmark its ready",
       "another": "Why not creating another?",
       "failed": "Seems the script you provided is not valid. Give it another shot.",
-      "github": "See it on github"
+      "github": "See it on GitHub"
     }
   }
 }
