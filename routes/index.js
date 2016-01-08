@@ -2,15 +2,34 @@ module.exports = function(app) {
 
   "use strict";
 
-  const _uglify   = require("uglify-js");
-  const _extend   = require("lodash").extend;
-  const _isString = require("lodash").isString;
+  // constants
+  const FS_CORE_CONFIG = "main";
+
+  // 3rd
+  const _uglify        = require("uglify-js");
+  const _extend        = require("lodash").extend;
+  const _isString      = require("lodash").isString;
+
+  // jaune
+  const _fsManager     = app.Fs.Manager;
+
+  // bookmarkify
+  const _fsModule      = _fsManager.getModule(FS_CORE_CONFIG);
 
   /**
    * @function Sends main as response
    */
   const sendIndex = function* (data) {
     yield this.jaune.responder.page.send("index", {result: data || {}});
+  };
+
+  /**
+   * @function Sends robots.txt as response
+   */
+  const sendRobots = function* () {
+    yield this.jaune.responder.file.send(
+            _fsModule,
+            "/views/robots.txt");
   };
 
   /**
@@ -49,6 +68,8 @@ module.exports = function(app) {
     setupRoutes : function(config) {
       config.route("/") .get(sendIndex)
                         .post(createBookmark);
+
+      config.route("/robots.txt").get(sendRobots);
     }
   };
 };
