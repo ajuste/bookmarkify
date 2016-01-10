@@ -27,9 +27,7 @@ module.exports = function(app) {
    * @function Sends robots.txt as response
    */
   const sendRobots = function* () {
-    yield this.jaune.responder.file.send(
-            _fsModule,
-            "/views/robots.txt");
+    yield this.jaune.responder.file.send(_fsModule, "/views/robots.txt");
   };
 
   /**
@@ -54,7 +52,6 @@ module.exports = function(app) {
         script: !bookmark ? script : null,
         failed: !bookmark
       });
-
       console.log(JSON.stringify(data))
     }
     yield sendIndex.call(this, data);
