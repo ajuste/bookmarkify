@@ -31,6 +31,13 @@ module.exports = function(app) {
   };
 
   /**
+   * @function Sends sitemap.xml as response
+   */
+  const sendSitemap = function* () {
+    yield this.jaune.responder.file.send(_fsModule, "/views/sitemap.xml");
+  };
+
+  /**
    * @function Processes script
    */
   const createBookmark = function* () {
@@ -67,6 +74,7 @@ module.exports = function(app) {
                         .post(createBookmark);
 
       config.route("/robots.txt").get(sendRobots);
+      config.route("/sitemap.xml").get(sendSitemap);
     }
   };
 };
