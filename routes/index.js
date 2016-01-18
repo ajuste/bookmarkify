@@ -43,6 +43,7 @@ module.exports = function(app) {
   const createBookmark = function* () {
 
     const script = this.request.body.script;
+    const name = this.request.body.name;
     const data   = {};
     var bookmark = null;
 
@@ -57,7 +58,8 @@ module.exports = function(app) {
       _extend(data, {
         bookmark : ["javascript:", encodeURIComponent(bookmark)].join(""),
         script: !bookmark ? script : null,
-        failed: !bookmark
+        failed: !bookmark,
+        name: name || this.jaune.engine().Locale.Manager.getStringResource('pages.index.unnamed_bookmark')
       });
       console.log(JSON.stringify(data))
     }

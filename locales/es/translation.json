@@ -6,12 +6,17 @@
     "index" : {
       "title" : "Bookmarkify.js: Ejecuta tu .js con un click",
       "description":  "Crea marcadores que ejecutan código JavaScript con un simple click.",
-      "h2": "Crea marcadores que ejecutan código JavaScript con un simple click. Empieza por envíar tu código debajo.",
+      "intro1": "Deja de escribir una y otra vez el mismo código JavaScript en tu consola; escribelo una vez y reutilizalo tantas veces como quieras.",
+      "intro2": "Crea un marcador .js que ejecuta tu código con un solo click.",
       "submit": "Crear marcador!",
       "success": "Tu marcador está listo",
       "another": "¿Por qué no crear otro?",
       "failed": "Parece que el script que enviaste no es válido. Intentalo de vuelta.",
-      "github": "En GitHub"
+      "github": "En GitHub",
+      "placeholder_name": "Nombre del marcador (opcional)",
+      "placeholder_script": "Tu script",
+      "drag_bookmark": "Arrastra tu marcador a la barra de marcadores:",
+      "unnamed_bookmark": "Script sin nombre"
     }
   }
 }

@@ -19,17 +19,25 @@ html(itemscope, itemtype="http://schema.org/Product")
       h1(class='line')=t('app.name')
 
       if failed
+
         div(class='error label')=t('pages.index.failed')
+
       else if bookmark
+
         div(class='success label')=t('pages.index.success')
-        code(class='line')=bookmark
-        h2=t('pages.index.another')
+        include ./index_bookmark.jade
+        p(class='c h')=t('pages.index.another')
+
       else
-        h2=t('pages.index.h2')
+
+        p(class='c')=t('pages.index.intro1')
+        p(class='c')=t('pages.index.intro2')
 
       form(class='line p', action="/", method="POST")
 
-        textarea(class='line', name="script")=script
+        textarea(class='line', name="script", placeholder=t('pages.index.placeholder_script'))=script
+
+        input(type='text', class='line', name="name", placeholder=t('pages.index.placeholder_name'), value=name)
 
         button(type='submit', class='button line')=t('pages.index.submit')
 
