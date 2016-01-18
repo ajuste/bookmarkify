@@ -59,7 +59,7 @@ module.exports = function(app) {
         bookmark : ["javascript:", encodeURIComponent(bookmark)].join(""),
         script: !bookmark ? script : null,
         failed: !bookmark,
-        name: !bookmark ? name || this.jaune.engine().Locale.Manager.getStringResource('pages.index.unnamed_bookmark') : nullm
+        name: !bookmark ? name || this.jaune.engine().Locale.Manager.getStringResource('pages.index.unnamed_bookmark') : null,
         bookmark_name: name
       });
       console.log(JSON.stringify(data))
